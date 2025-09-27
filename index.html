@@ -10,10 +10,45 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+    #grandparent,
+    #parent,
+    #child {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+  </style>
   <body>
     <h1>JavaScript by YT</h1>
+    <h2>Event Bubbling/Capturing</h2>
+    <div id="grandparent">
+      grand parent
+      <div id="parent">
+        parent
+        <div id="child">child</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 100px">
+      <h2>Event Delegation</h2>
+      <ul id="categories">
+        <li id="laptops">laptops</li>
+        <li id="cameras">cameras</li>
+        <li id="shoes">shoes</li>
+      </ul>
+    </div>
+    <div id="form" style="margin-top: 10px">
+      <input type="text" id="name" data-uppercase />
+      <input type="text" id="pen" />
+      <input type="text" id="mobile" data-uppercase />
+    </div>
     <!-- <script src="./index.js"></script>
     <script src="./mybind.js"></script> -->
-    <script src="./call-apply-bind.js"></script>
+    <!-- <script src="./call-apply-bind.js"></script> -->
+    <!-- <script src="./currying.js"></script> -->
+    <!-- <script src="./event-bubbling-capturing.js"></script> -->
+    <script src="./event-delegation.js"></script>
   </body>
 </html>
